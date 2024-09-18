@@ -361,5 +361,3 @@ def pneumonia_detection():
         return jsonify({'error': f"HTTP error occurred: {http_err}"}), 500
     except Exception as err:
         return jsonify({'error': f"Other error occurred: {err}"}), 500
-if __name__ == "__main__":
-    app.run(debug=True)
